@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4D758"
+    tools:context=".MainActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MainActivity"
+        tools:layout="@android:layout/simple_gallery_item"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="128dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="9dp">
+
+        <Button
+            android:id="@+id/btnAcercar"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="9dp"
+            android:drawableLeft="@drawable/ic_add_foreground"
+            android:padding="0dp"
+            android:text="‎"
+            android:onClick="aumentar"/>
+
+        <Button
+            android:id="@+id/btnAlejar"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="9dp"
+            android:drawableLeft="@drawable/ic_remove_foreground"
+            android:padding="0dp"
+            android:text="‎"
+            android:onClick="alejar"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
